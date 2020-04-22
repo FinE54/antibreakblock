@@ -1,0 +1,8 @@
+version: 2.0
+enable: true
+
+cancelDropITEM: true
+cancelDropEXP: true
+
+sendMessage: false
+Message: 'You cant break in This World'

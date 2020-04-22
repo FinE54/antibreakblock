@@ -1,0 +1,8 @@
+worlds:
+  world:
+    - 123
+    - 32
+  world_the_end:
+    - 233
+  world_nether:
+    - try
