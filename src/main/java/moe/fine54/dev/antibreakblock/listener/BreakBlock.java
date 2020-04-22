@@ -15,21 +15,16 @@ public class BreakBlock implements Listener {
         Material m = e.getBlock().getType();
         if (AntiBreakBlock.getINSTANCE().getConfig().getBoolean("enable")) {
             if (AntiBreakBlock.getINSTANCE().getWorldList().contains(worldName.toLowerCase())) {
-                p.sendMessage("inlist");
                 if ("cantbreak".equalsIgnoreCase(AntiBreakBlock.getINSTANCE().getWorldSetting().getString("worlds." + worldName + ".type"))) {
-                    p.sendMessage("cantbreak");
                     if (!p.hasPermission("antibreakblock.allow")) {
                         if (AntiBreakBlock.getINSTANCE().getBlockList().get(worldName).contains(m)) {
-                            System.out.println("check");
                             doSomething(e);
                         }
                     }
                 }
                 if ("breakonly".equalsIgnoreCase(AntiBreakBlock.getINSTANCE().getWorldSetting().getString("worlds." + worldName + ".type"))) {
-                    p.sendMessage("breakonly");
                     if (!p.hasPermission("antibreakblock.allow")) {
                         if (!AntiBreakBlock.getINSTANCE().getBlockList().get(worldName).contains(m)) {
-                            System.out.println("check");
                             doSomething(e);
                         }
                     }
