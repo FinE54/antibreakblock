@@ -1,5 +1,16 @@
 # AntiBreakBlock
-It's plugin made for Minecraft Server. Unallow to break specific blocks in world of setting.
+此插件用于阻止玩家在指定世界破坏特定的方块。
 
-Plugin Command:
-/antibreakblock additem
+**可设置阻止类型为：**
+1. 仅允许破坏指定方块
+2. 不允许破坏指定方块
+
+插件可查询手持物品的材质ID（Material Type）
+
+**插件指令:**
+1. /abb reload - 重载插件配置文件
+2. /abb info   - 查询手持物品的ID
+
+插件未对 Mod 服务器进行适配，尚不清楚是否适用于 Mod 端
+
+如果使用途中遇到了Bug，或者对插件改进有建议，请提交 Issues
