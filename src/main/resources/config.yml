@@ -1,6 +1,9 @@
 version: 2.0
 enable: true
-
+# Break设置能否破坏，true为允许破坏，false为不可破坏
+# cancelDropITEM为，是否取消物品掉落，true为取消，false为不取消
+# cancelDropEXP为，是否取消掉落经验，true为取消，false为不取消
+break: true
 cancelDropITEM: true
 cancelDropEXP: true
 

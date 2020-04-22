@@ -1,5 +1,16 @@
 name: AntiBreakBlock
-main: moe.fine54.dev.antibreakblock
+main: moe.fine54.dev.antibreakblock.AntiBreakBlock
 version: 2.0
 auther: FinE54
 description: Cancel players from place or break in a setting worlds
+
+commands:
+  antibreakblock:
+    usage: /antibreakblock reload
+    aliases: abb
+
+permissions:
+  antibreakblock.allow:
+    default: op
+  antibreakblock.reload:
+    default: op

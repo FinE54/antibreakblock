@@ -1,8 +1,29 @@
+# type = breakonly = 仅允许破坏指定方块
+#   仅允许破坏方块以外的方块，将会遵循 config 内的掉落设置
+# type = cantbreak = 不允许破坏指定方块
+
 worlds:
   world:
-    - 123
-    - 32
+    type: breakonly
+    list:
+      - DIAMOND_ORE
+      - EMERALD_ORE
+      - GOLD_ORE
+      - IRON_ORE
+      - COAL_ORE
   world_the_end:
-    - 233
+    type: breakonly
+    list:
+      - DIAMOND_ORE
+      - EMERALD_ORE
+      - GOLD_ORE
+      - IRON_ORE
+      - COAL_ORE
   world_nether:
-    - try
+    type: breakonly
+    list:
+      - DIAMOND_ORE
+      - EMERALD_ORE
+      - GOLD_ORE
+      - IRON_ORE
+      - COAL_ORE
